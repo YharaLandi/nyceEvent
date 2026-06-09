@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nyce Event</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════ -->
+  <header class="navbar" id="navbar">
+    <a href="#home" class="navbar__logo" data-nav="home">
+      <img src="https://placehold.co/120x60/ffffff/003E73?text=Nyce+Event" alt="Nyce Event" />
+    </a>
+    <nav class="navbar__links" id="navLinks">
+      <a href="#home"      class="nav-link active" data-nav="home">HOME</a>
+      <a href="#lavora"    class="nav-link"         data-nav="lavora">LAVORA CON NOI</a>
+      <a href="#chi-siamo" class="nav-link"         data-nav="chi-siamo">CHI SIAMO</a>
+      <a href="#servizi"   class="nav-link"         data-nav="servizi">SERVIZI</a>
+      <a href="#partners"  class="nav-link"         data-nav="partners">PARTNERS</a>
+      <a href="#contatti"  class="nav-link"         data-nav="contatti">CONTATTI</a>
+    </nav>
+    <button class="navbar__burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ═══════════════════════════════════════
+       HOME
+  ═══════════════════════════════════════ -->
+  <main id="home" class="page page--home">
+
+    <!-- HERO -->
+    <section class="hero">
+      <img src="https://placehold.co/1400x580/f5a623/ffffff?text=Hero+foto+animatori" alt="Animatori Nyce Event" class="hero__img" />
+      <div class="hero__card">
+        <h1>Nyce Event <span class="emoji">❤️</span></h1>
+        <p>Dal 2012 portiamo <strong>energia</strong> e sorrisi a chi decide di lavorare con noi. Collaboriamo con villaggi turistici in Italia e all'estero, ma il nostro vero obiettivo non è solo organizzare attività, ma creare esperienze che restano.</p>
+        <span class="hero__deco hero__deco--star">⭐</span>
+      </div>
+    </section>
+
+    <!-- TICKER -->
+    <div class="ticker-bar">
+      <div class="ticker-track" aria-hidden="true">
+        <span>PASSIONE</span><span class="sep">·</span>
+        <span>ENERGIA</span><span class="sep">·</span>
+        <span>PROFESSIONALITÀ</span><span class="sep">·</span>
+        <span>ENTUSIASMO</span><span class="sep">·</span>
+        <span>SERENITÀ</span><span class="sep">·</span>
+        <span>PASSIONE</span><span class="sep">·</span>
+        <span>ENERGIA</span><span class="sep">·</span>
+        <span>PROFESSIONALITÀ</span><span class="sep">·</span>
+        <span>ENTUSIASMO</span><span class="sep">·</span>
+        <span>SERENITÀ</span><span class="sep">·</span>
+      </div>
+    </div>
+
+    <!-- SPLIT: Il lavoro più bello -->
+    <section class="split-blue">
+      <div class="split-blue__left">
+        <h2>Il lavoro più bello del mondo?</h2>
+        <p>Far divertire le persone…<br /><strong>divertendoti davvero.</strong></p>
+      </div>
+      <div class="split-blue__right">
+        <p>Non bisogna essere perfetti.<br />
+        Quello che conta davvero è avere<br />
+        voglia di mettersi in gioco.<br />
+        Il resto lo impariamo insieme!</p>
+        <a href="#lavora" class="btn btn--pink" data-nav="lavora">Scopri il mondo Nyce</a>
+      </div>
+    </section>
+
+    <!-- TESTIMONIANZE -->
+    <section class="testimonials">
+      <div class="testimonials__heading">
+        <span class="deco-emoji">❤️</span>
+        <span class="deco-emoji">⭐</span>
+        <h2>Chi l'ha vissuto<br />si racconta</h2>
+      </div>
+      <!-- card duplicate per loop infinito seamless -->
+      <div class="testimonials__carousel">
+        <div class="tcard tcard--yellow">
+          <div class="tcard__header">
+            <strong>Luca – Mini club</strong>
+            <span>Prima stagione</span>
+          </div>
+          <p>Sono partito per la prima volta con un po di paura perché non sono molto estroverso. I primi giorni ero un po' rigido ma piano piano mi sono sciolto. A fine stagione mi sentivo proprio diverso, più sicuro e soprattutto molto cresciuto.</p>
+        </div>
+        <div class="tcard tcard--green">
+          <div class="tcard__header">
+            <strong>Sara – Ballerina</strong>
+            <span>Prima stagione</span>
+          </div>
+          <p>Prima di partire avevo mille paranoie, pensavo "non ce la farò mai". Invece il mio team mi ha aiutata un sacco. Adesso la cosa che mi piace di più è proprio parlare con le persone e mi sento a mio agio.</p>
+        </div>
+        <div class="tcard tcard--orange">
+          <div class="tcard__header">
+            <strong>Marco – Sportivo</strong>
+            <span>Seconda stagione</span>
+          </div>
+          <p>Ho iniziato quasi per caso. Dopo la prima stagione avevo tanti dubbi: volevo rifarlo. L'energia che si crea e le cose che si creano restano.</p>
+        </div>
+        <!-- duplicati per loop seamless -->
+        <div class="tcard tcard--yellow">
+          <div class="tcard__header">
+            <strong>Luca – Mini club</strong>
+            <span>Prima stagione</span>
+          </div>
+          <p>Sono partito per la prima volta con un po di paura perché non sono molto estroverso. I primi giorni ero un po' rigido ma piano piano mi sono sciolto. A fine stagione mi sentivo proprio diverso, più sicuro e soprattutto molto cresciuto.</p>
+        </div>
+        <div class="tcard tcard--green">
+          <div class="tcard__header">
+            <strong>Sara – Ballerina</strong>
+            <span>Prima stagione</span>
+          </div>
+          <p>Prima di partire avevo mille paranoie, pensavo "non ce la farò mai". Invece il mio team mi ha aiutata un sacco. Adesso la cosa che mi piace di più è proprio parlare con le persone e mi sento a mio agio.</p>
+        </div>
+        <div class="tcard tcard--orange">
+          <div class="tcard__header">
+            <strong>Marco – Sportivo</strong>
+            <span>Seconda stagione</span>
+          </div>
+          <p>Ho iniziato quasi per caso. Dopo la prima stagione avevo tanti dubbi: volevo rifarlo. L'energia che si crea e le cose che si creano restano.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHE ANIMATORE SEI -->
+    <section class="roles">
+      <div class="roles__left">
+        <h2>Che animatore sei?</h2>
+        <p>Nel team Nyce c'è spazio per tanti talenti diversi. E se ancora non sai qual'è il tuo posto, lo troviamo insieme!</p>
+        <a href="#lavora" class="btn btn--pink" data-nav="lavora">Candidati ora <span>⭐</span></a>
+      </div>
+      <div class="roles__tags">
+        <span class="pill pill--blue">Responsabile</span>
+        <span class="pill pill--green">Fitness</span>
+        <span class="pill pill--cyan">Musicisti &amp; Pianobar</span>
+        <span class="pill pill--red">Junior club</span>
+        <span class="pill pill--darkblue">Istruttori sportivi</span>
+        <span class="pill pill--pink">Tecnico DJ</span>
+        <span class="pill pill--cyan2">Animatori miniclub</span>
+        <span class="pill pill--green2">Ballerini &amp; coreografi</span>
+      </div>
+    </section>
+
+    <!-- VIVI UN'ESPERIENZA -->
+    <section class="experience">
+      <div class="experience__left">
+        <h2>Vivi un'esperienza<br />che ti cambia</h2>
+        <p>Molti animatori iniziano la <strong>prima stagione</strong> con ansie, paure e un po' di timidezza. Ma poi…il team diventa famiglia, le giornate si riempiono di energia e ti accorgi di stare vivendo qualcosa che va oltre un semplice lavoro.</p>
+      </div>
+      <div class="experience__right">
+        <ul>
+          <li><span class="exp-icon">🌍</span> <span class="exp-text exp-text--blue">vivi in <strong>posti bellissimi</strong></span></li>
+          <li><span class="exp-icon">🤝</span> <span class="exp-text exp-text--green">crei <strong>amicizie vere</strong></span></li>
+          <li><span class="exp-icon">✏️</span> <span class="exp-text exp-text--dark">ti metti in <strong>gioco ogni giorno</strong></span></li>
+          <li><span class="exp-icon">🗺️</span> <span class="exp-text exp-text--blue2">conosci persone da <strong>tutta Italia</strong></span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PARTNER PREVIEW -->
+    <section class="partners-preview">
+      <h2 class="section-title">I nostri partner</h2>
+      <div class="partners-preview__grid">
+        <div class="pcard pcard--darkblue">
+          <div class="pcard__text">
+            <p class="pcard__name">PUERTO SVAGO ANGRI</p>
+            <p class="pcard__sub">Agenzia di viaggio e turismo</p>
+            <a href="#partners" class="btn btn--pink btn--sm" data-nav="partners">Scopri le nostre mete</a>
+          </div>
+          <img src="https://placehold.co/140x140/ffffff/003E73?text=Puerto+Svago" alt="Puerto Svago" class="pcard__logo" />
+        </div>
+        <div class="pcard pcard--yellow">
+          <img src="https://placehold.co/100x100/white/black" alt="Club Vacanze Italiane" class="pcard__logo pcard__logo--round" />
+          <div class="pcard__text">
+            <p class="pcard__name">CLUB VACANZE ITALIANE</p>
+            <p class="pcard__sub">Organizzatore di eventi</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main><!-- /home -->
+
+
+  <!-- ═══════════════════════════════════════
+       LAVORA CON NOI
+  ═══════════════════════════════════════ -->
+  <main id="lavora" class="page" style="display:none">
+
+    <!-- SPLIT BLUE ─────────────────────────── -->
+    <section class="split-blue">
+      <div class="split-blue__left">
+        <h2>Il lavoro più bello del mondo?</h2>
+        <p>Far divertire le persone…<br /><strong>divertendoti davvero.</strong></p>
+        <div style="margin-top:18px;font-size:1.6rem;line-height:1;">❤️ ⭐</div>
+      </div>
+      <div class="split-blue__right">
+        <p>Non devi essere perfetto.<br />
+        Non devi avere già esperienza.<br />
+        Fare l'animatore significa <strong>vivere un'estate diversa da tutte le altre.</strong></p>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE ─────────────────────────── -->
+    <section class="experience">
+      <div class="experience__left">
+        <h2>Vivi un'esperienza<br />che ti cambia</h2>
+        <p>Molti animatori iniziano la <strong>prima stagione</strong> con ansie, paure e un po' di timidezza. Ma poi…il team diventa famiglia, le giornate si riempiono di energia e ti accorgi di stare vivendo qualcosa che va oltre un semplice lavoro.</p>
+      </div>
+      <div class="experience__right">
+        <ul>
+          <li><span class="exp-icon">🌍</span> <span class="exp-text exp-text--blue">vivi in <strong>posti bellissimi</strong></span></li>
+          <li><span class="exp-icon">🤝</span> <span class="exp-text exp-text--green">crei <strong>amicizie vere</strong></span></li>
+          <li><span class="exp-icon">✏️</span> <span class="exp-text exp-text--dark">ti metti in <strong>gioco ogni giorno</strong></span></li>
+          <li><span class="exp-icon">🗺️</span> <span class="exp-text exp-text--blue2">conosci persone da <strong>tutta Italia</strong></span></li>
+        </ul>
+        <a href="https://wa.me/393389930072" class="btn btn--wa" target="_blank" rel="noopener">
+          <i class="bi bi-whatsapp"></i>
+          Chatta con noi!
+        </a>
+      </div>
+    </section>
+
+    <!-- TICKER PINK ────────────────────────── -->
+    <div class="ticker-bar ticker-bar--pink" aria-hidden="true">
+      <div class="ticker-track">
+        <span>PROFESSIONALITÀ</span><span class="sep">·</span>
+        <span>ENTUSIASMO</span><span class="sep">·</span>
+        <span>SERENITÀ</span><span class="sep">·</span>
+        <span>PASSIONE</span><span class="sep">·</span>
+        <span>ENERGIA</span><span class="sep">·</span>
+        <span>PROFESSIONALITÀ</span><span class="sep">·</span>
+        <span>ENTUSIASMO</span><span class="sep">·</span>
+        <span>SERENITÀ</span><span class="sep">·</span>
+        <span>PASSIONE</span><span class="sep">·</span>
+        <span>ENERGIA</span><span class="sep">·</span>
+      </div>
+    </div>
+
+    <!-- CHE ANIMATORE SEI ──────────────────────────── -->
+    <!-- Titolo centrato sopra la sezione -->
+    <div class="roles-title-wrap">
+      <h2 class="section-title">Che animatore sei?</h2>
+    </div>
+    <section class="roles roles--lavora">
+      <div class="roles__tags">
+        <span class="pill pill--cyan">Responsabile</span>
+        <span class="pill pill--orange">Fitness</span>
+        <span class="pill pill--blue">Musicisti &amp; Pianobar</span>
+        <span class="pill pill--red">Junior club</span>
+        <span class="pill pill--darkblue">Istruttori sportivi</span>
+        <span class="pill pill--pink">Tecnico DJ</span>
+        <span class="pill pill--green">Animatori miniclub</span>
+        <span class="pill pill--orange">Ballerini &amp; coreografi</span>
+      </div>
+      <div class="roles__left">
+        <p>Non esiste un solo tipo di animatore.<br />
+        Nel team Nyce c'è spazio per tanti talenti diversi. E se ancora non sai qual'è il tuo posto, lo troviamo insieme!<br />
+        In questa avventura <strong>non sarai mai solo</strong>, c'è un team che ti segue, ti aiuta e ti supporta.</p>
+      </div>
+    </section>
+
+    <!-- QUOTE ──────────────────────────────────────── -->
+    <div class="roles-quote">
+      <span class="deco-emoji">⭐</span>
+      <p><strong>Non bisogna essere perfetti.<br />
+      Quello che conta davvero è avere<br />
+      voglia di mettersi in gioco.<br />
+      Il resto lo impariamo insieme!</strong></p>
+    </div>
+
+    <!-- CARD RUOLI — carousel scorrevole, sovrapposto al verde (viene PRIMA) ──
+         Le card stanno sopra il verde: il verde sale con margin-top negativo -->
+
+    <div class="tcard-scroll">
+      <div class="testimonials__carousel">
+        <div class="tcard"><div class="tcard__header"><strong>Mini Club</strong></div><p>Per chi ama stare con i bambini, i lavori manuali e usare al massimo la propria fantasia.</p></div>
+        <div class="tcard"><div class="tcard__header"><strong>Junior Club</strong></div><p>Per chi ama stare con i bambini, i lavori manuali e usare al massimo la propria fantasia.</p></div>
+        <div class="tcard"><div class="tcard__header"><strong>Ballerina</strong></div><p>Per chi ama la danza, trasmettere energia e vivere il palco ogni sera con passione.</p></div>
+        <div class="tcard"><div class="tcard__header"><strong>Fitness</strong></div><p>Per chi ama il movimento e coinvolgere le persone in attività fisiche dinamiche.</p></div>
+        <div class="tcard"><div class="tcard__header"><strong>Istruttori sportivi</strong></div><p>Per chi ha competenze sportive e vuole insegnarle divertendosi con gli ospiti.</p></div>
+        <div class="tcard"><div class="tcard__header"><strong>Tecnico DJ</strong></div><p>Per chi sa gestire audio, luci e atmosfera: il motore invisibile di ogni serata.</p></div>
+        <div class="tcard"><div class="tcard__header"><strong>Musicisti &amp; Pianobar</strong></div><p>Per chi suona e canta, creando l'atmosfera giusta nelle serate più eleganti.</p></div>
+        <!-- duplicati per loop seamless -->
+        <div class="tcard"><div class="tcard__header"><strong>Mini Club</strong></div><p>Per chi ama stare con i bambini, i lavori manuali e usare al massimo la propria fantasia.</p></div>
+        <div class="tcard"><div class="tcard__header"><strong>Junior Club</strong></div><p>Per chi ama stare con i bambini, i lavori manuali e usare al massimo la propria fantasia.</p></div>
+        <div class="tcard"><div class="tcard__header"><strong>Ballerina</strong></div><p>Per chi ama la danza, trasmettere energia e vivere il palco ogni sera con passione.</p></div>
+        <div class="tcard"><div class="tcard__header"><strong>Fitness</strong></div><p>Per chi ama il movimento e coinvolgere le persone in attività fisiche dinamiche.</p></div>
+        <div class="tcard"><div class="tcard__header"><strong>Istruttori sportivi</strong></div><p>Per chi ha competenze sportive e vuole insegnarle divertendosi con gli ospiti.</p></div>
+        <div class="tcard"><div class="tcard__header"><strong>Tecnico DJ</strong></div><p>Per chi sa gestire audio, luci e atmosfera: il motore invisibile di ogni serata.</p></div>
+        <div class="tcard"><div class="tcard__header"><strong>Musicisti &amp; Pianobar</strong></div><p>Per chi suona e canta, creando l'atmosfera giusta nelle serate più eleganti.</p></div>
+      </div>
+    </div>
+
+    <!-- COSA TI OFFRIAMO — verde, sale sotto le card con margin-top negativo ── -->
+    <section class="offriamo">
+      <h2 class="section-title">Cosa ti offriamo</h2>
+      <div class="offriamo__grid">
+        <ul class="offriamo__list">
+          <li><span class="deco-emoji">⭐</span><p>Contratto regolare secondo la normativa vigente, con contributi e tutele;</p></li>
+          <li><span class="deco-emoji">⭐</span><p>Vitto e alloggio in struttura per tutta la durata dell'ingaggio (dove previsto dal contratto);</p></li>
+          <li><span class="deco-emoji">⭐</span><p>Incontri in Dad per formazione gratuita;</p></li>
+        </ul>
+        <ul class="offriamo__list">
+          <li><span class="deco-emoji">⭐</span><p>Possibilità di crescita in ruoli di maggiore responsabilità (vicecapo animazione, capo animazione, responsabile di area);</p></li>
+          <li><span class="deco-emoji">⭐</span><p>Affiancamento costante nel tuo percorso iniziale e di crescita;</p></li>
+          <li><span class="deco-emoji">⭐</span><p>Luoghi meravigliosi dove vivere una stagione indimenticabile.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- COSA TI CHIEDIAMO — card sovrapposta ────────── -->
+    <div class="cosa-chiediamo-wrap">
+      <div class="cosa-chiediamo">
+        <h3>Cosa ti chiediamo</h3>
+        <ul>
+          <li>18 anni <strong>COMPIUTI</strong> entro la data di partenza</li>
+          <li>Disponibilità <strong>CONTINUATIVA</strong> per almeno 3 mesi (anche maggiore, rispetto alla stagione)</li>
+          <li>Cittadinanza italiana/UE o regolare permesso di soggiorno</li>
+          <li>Voglia di mettersi in gioco, lavorare in squadra e stare a contatto con le persone.</li>
+          <li>Per alcuni ruoli tecnici come ballo, sport, audio-luci, è richiesta esperienza specifica.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- FORM CANDIDATURA ────────────────────────────── -->
+    <section class="form-candidatura">
+      <div class="form-candidatura__text">
+        <span class="deco-emoji">⭐</span>
+        <p>SE TI ENTUSIASMA L'IDEA<br />
+        DI FARE L'ANIMATORE,<br />
+        <span class="form-cta-pink">COMPILA IL FORM QUI SOTTO<br />
+        E RACCONTACI DI TE:</span><br />
+        PIÙ INFORMAZIONI CI DAI,<br />
+        PIÙ SARÀ FACILE TROVARE<br />
+        IL RUOLO GIUSTO PER TE.</p>
+        <span class="deco-emoji">⭐</span>
+      </div>
+      <form class="candidatura-form" novalidate>
+        <div class="cform__field"><input type="text"  name="nome_cognome" placeholder="Nome e Cognome*" required autocomplete="name" /></div>
+        <div class="cform__field"><input type="date"  name="nascita"      placeholder="Data di nascita" required /></div>
+        <div class="cform__field"><input type="email" name="email"        placeholder="Email*"          required autocomplete="email" /></div>
+        <div class="cform__field"><input type="tel"   name="telefono"     placeholder="Telefono*"       required autocomplete="tel" /></div>
+        <div class="cform__field"><input type="text"  name="ruolo"        placeholder="Ruolo di interesse" /></div>
+        <div class="cform__field"><input type="text"  name="disponibilita" placeholder="Disponibilità" /></div>
+        <div class="cform__field"><input type="text"  name="lingue"       placeholder="Lingue parlate" /></div>
+        <div class="cform__field"><input type="text"  name="presentazione" placeholder="Breve presentazione" /></div>
+        <div class="cform__field cform__field--file">
+          <label class="btn btn--pink" for="cv-upload" style="border-radius:50px;cursor:pointer;">Carica qui il tuo CV</label>
+          <input type="file" id="cv-upload" name="cv" accept=".pdf,.doc,.docx" style="display:none" />
+          <span class="cform__filename" id="cv-filename"></span>
+        </div>
+        <div class="cform__check">
+          <input type="checkbox" id="privacy" name="privacy" required />
+          <label for="privacy">Dichiaro di aver letto e accettato la <a href="#" class="cform__link">Privacy Policy</a></label>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════
+       CHI SIAMO  (placeholder)
+  ═══════════════════════════════════════ -->
+  <main id="chi-siamo" class="page" style="display:none">
+    <div style="padding:120px 40px;text-align:center;font-family:'Grandstander',cursive;">
+      <h2 style="font-size:2rem">Chi siamo — prossima pagina 🚧</h2>
+    </div>
+  </main>
+
+  <!-- ═══════════════════════════════════════
+       SERVIZI  (placeholder)
+  ═══════════════════════════════════════ -->
+  <main id="servizi" class="page" style="display:none">
+    <div style="padding:120px 40px;text-align:center;font-family:'Grandstander',cursive;">
+      <h2 style="font-size:2rem">Servizi — prossima pagina 🚧</h2>
+    </div>
+  </main>
+
+  <!-- ═══════════════════════════════════════
+       PARTNERS  (placeholder)
+  ═══════════════════════════════════════ -->
+  <main id="partners" class="page" style="display:none">
+    <div style="padding:120px 40px;text-align:center;font-family:'Grandstander',cursive;">
+      <h2 style="font-size:2rem">Partners — prossima pagina 🚧</h2>
+    </div>
+  </main>
+
+  <!-- ═══════════════════════════════════════
+       CONTATTI  (placeholder)
+  ═══════════════════════════════════════ -->
+  <main id="contatti" class="page" style="display:none">
+    <div style="padding:120px 40px;text-align:center;font-family:'Grandstander',cursive;">
+      <h2 style="font-size:2rem">Contatti — prossima pagina 🚧</h2>
+    </div>
+  </main>
+
+
+  <!-- ═══════════════════════════════════════
+       FOOTER (presente su tutte le pagine)
+  ═══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer__col">
+      <p class="footer__brand">ANIMARE SRL</p>
+      <p>Siamo un'agenzia di animazione e di intrattenimento che da più di 15 anni porta sorrisi in giro per il mondo.</p>
+      <div class="footer__socials">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Instagram">&#9653;</a>
+        <a href="#" aria-label="YouTube">&#9654;</a>
+        <a href="https://wa.me/393389930072" aria-label="WhatsApp">&#128241;</a>
+        <a href="#" aria-label="Messenger">m</a>
+      </div>
+    </div>
+    <div class="footer__col">
+      <p class="footer__brand">Animare Srl</p>
+      <address>
+        Corso Garibaldi, 5–80055 Portici (Na)<br />
+        tel 3389930072<br />
+        tel/fax 0817585381<br />
+        <a href="mailto:amministrazione@nycevent.it">amministrazione@nycevent.it</a><br />
+        P.Iva 09507141217
+      </address>
+    </div>
+  </footer>
+
+  <!-- WhatsApp floating button -->
+  <a href="https://wa.me/393389930072" class="wa-fab" target="_blank" aria-label="Contattaci su WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <script src="assets/js/router.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
