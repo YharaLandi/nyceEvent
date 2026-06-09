@@ -758,7 +758,11 @@ strong {
    PARTNER PREVIEW
    ══════════════════════════════════════════════════ */
 .partners-preview {
-  padding: 48px var(--pad-x);
+  padding: 48px 0;
+}
+
+.partners-preview .section-title {
+  padding: 0 var(--pad-x);
 }
 
 .section-title {
@@ -772,24 +776,36 @@ strong {
   display: flex;
   flex-direction: column;
   gap: 16px;
+
 }
 
 .pcard {
-  border-radius: 16px;
   padding: 24px;
   display: flex;
   align-items: center;
   gap: 18px;
+  border-radius: 0 90px 90px 0;
+
 }
 
 .pcard--darkblue {
   background: var(--darkblue);
   color: var(--white);
+  justify-content: flex-end;
+
+}
+
+.pcard .btn {
+  margin-top: 10px;
+  align-self: flex-start;
+  border-radius: 10px;
 }
 
 .pcard--yellow {
   background: var(--yellow);
   color: var(--black);
+    border-radius:  90px 0 0 90px ;
+
 }
 
 .pcard__text {
@@ -821,6 +837,7 @@ strong {
 @media (min-width: 600px) {
   .partners-preview__grid {
     flex-direction: row;
+    gap: 106px;
   }
 
   .pcard {
@@ -830,7 +847,11 @@ strong {
 
 @media (min-width: 900px) {
   .partners-preview {
-    padding: 70px max(40px, calc((100% - var(--inner)) / 2));
+    padding: 70px 0;
+  }
+
+  .partners-preview .section-title {
+    padding: 0 max(40px, calc((100% - var(--inner)) / 2));
   }
 
   .section-title {
@@ -958,31 +979,6 @@ strong {
   }
 }
 
-/* partner cards — sfumatura esterna + angoli tondi */
-.pcard {
-  border-radius: 0 90px 90px 0;
-}
-
-.pcard--darkblue {
-  background: linear-gradient(to left, var(--darkblue) 60%, transparent);
-  color: var(--white);
-  justify-content: flex-end;
-}
-
-.pcard--yellow {
-  background: linear-gradient(to right, var(--yellow) 60%, transparent);
-  color: var(--black);
-}
-
-.pcard .btn {
-  margin-top: 10px;
-  align-self: flex-start;
-  border-radius: 50px;
-}
-
-.pcard--yellow {
-  border-radius: 90px 0 0 90px;
-}
 
 /* ══════════════════════════════════════════════════
    LAVORA CON NOI — aggiunte minime
@@ -996,9 +992,7 @@ strong {
 /* Bottone WhatsApp */
 .btn--wa {
   position: relative;
-  top: -30px; 
   display: inline-flex;
-  margin-left: 104px;
   gap: 10px;
   background: var(--green);
   color: var(--black);
@@ -1010,10 +1004,9 @@ strong {
   border: none;
   cursor: pointer;
   transition: transform .15s, box-shadow .15s;
-  width: 300px;
   height: 54px;
   justify-content: center;
-align-items: center;
+  align-items: center;
 }
 
 .btn--wa:hover {
@@ -1021,7 +1014,7 @@ align-items: center;
   box-shadow: 0 6px 20px rgba(91, 168, 50, .35);
 }
 
-.btn--wa i{
+.btn--wa i {
   font-size: 1.5rem;
 }
 
@@ -1034,6 +1027,12 @@ align-items: center;
 @media (min-width: 900px) {
   .roles-title-wrap {
     padding: 56px max(40px, calc((100% - var(--inner)) / 2)) 0;
+  }
+
+  .btn--wa {
+    margin-left: 54px;
+    width: 300px;
+    top: -30px;
   }
 }
 
