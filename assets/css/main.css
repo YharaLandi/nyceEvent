@@ -301,11 +301,12 @@ strong {
 }
 
 .ticker-track {
+  width: max-content; 
   display: inline-flex;
   gap: 20px;
-  animation: ticker 28s linear infinite;
+  animation: ticker 48s linear infinite;
   font-family: var(--font);
-  font-weight: 800;
+  font-weight: 300;
   font-size: 1rem;
   letter-spacing: .08em;
   color: var(--white);
@@ -500,7 +501,7 @@ strong {
 .testimonials__carousel {
   display: flex;
   gap: 28px;
-  animation: carousel 22s linear infinite;
+  animation: carousel 42s linear infinite;
   width: max-content;
   padding: 0 var(--pad-x);
 }
@@ -879,6 +880,7 @@ strong {
   display: flex;
   flex-direction: column;
   gap: 32px;
+    justify-content: center;
 }
 
 .footer__brand {
@@ -891,6 +893,7 @@ strong {
 .footer address {
   font-size: .9rem;
   line-height: 1.9;
+  
 }
 
 .footer a {
@@ -934,7 +937,6 @@ strong {
     flex: 1;
   }
 }
-
 /* ══════════════════════════════════════════════════
    WHATSAPP FAB
    ══════════════════════════════════════════════════ */
@@ -953,6 +955,8 @@ strong {
   color: var(--white);
   box-shadow: 0 6px 24px rgba(37, 211, 102, .45);
   transition: transform .2s, box-shadow .2s;
+    line-height: 1;
+  display: flex;
 }
 
 .wa-fab:hover {
@@ -960,9 +964,8 @@ strong {
   box-shadow: 0 10px 32px rgba(37, 211, 102, .55);
 }
 
-.wa-fab svg {
-  width: 28px;
-  height: 28px;
+.wa-fab > i {
+  font-size: 28px;
 }
 
 @media (min-width: 900px) {
@@ -973,12 +976,10 @@ strong {
     height: 60px;
   }
 
-  .wa-fab svg {
-    width: 32px;
-    height: 32px;
+  .wa-fab > i {
+    font-size: 30px;
   }
 }
-
 
 /* ══════════════════════════════════════════════════
    LAVORA CON NOI — aggiunte minime
@@ -1336,5 +1337,167 @@ strong {
   .cform__field input {
     font-size: .95rem;
     padding: 16px 0;
+  }
+}
+
+/* ══════════════════════════════════════════════════
+   CHI SIAMO
+   ══════════════════════════════════════════════════ */
+ 
+/* Hero cyan */
+.cs-hero {
+  background: var(--cyan);
+  padding: 48px var(--pad-x);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 280px;
+}
+ 
+.cs-hero__card {
+  position: static;
+  transform: none;
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+}
+ 
+/* Valori */
+.values {
+  padding: 48px var(--pad-x);
+}
+ 
+.values__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+ 
+.val-card {
+  border-radius: 12px;
+  border: 4px solid transparent;
+  padding: 28px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  background: var(--white);
+}
+ 
+.val-card__icon { font-size: 2rem; }
+ 
+.val-card p {
+  font-size: .92rem;
+  font-weight: 700;
+}
+ 
+.val-card--pink   { 
+  border: 20px solid var(--pink);
+}
+.val-card--yellow { 
+  border: 20px solid var(--yellow);
+}
+.val-card--cyan   { 
+  border: 20px solid var(--cyan);
+}
+ 
+@media (min-width: 600px) {
+  .values__grid { flex-direction: row; }
+  .val-card { flex: 1; }
+}
+ 
+@media (min-width: 900px) {
+  .values {
+    padding: 64px max(40px, calc((100% - var(--inner)) / 2));
+  }
+  .val-card { padding: 36px 24px; }
+  .val-card p { font-size: 1rem; }
+}
+ 
+/* Team pills */
+.team-pills {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+ 
+.team-pill {
+  display: block;
+  background: var(--cyan);
+  color: var(--white);
+  font-family: var(--font);
+  font-weight: 800;
+  font-size: .9rem;
+  padding: 10px 20px;
+  letter-spacing: .05em;
+}
+ 
+.team-list {
+  margin-top: 10px;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: .88rem;
+  line-height: 1.65;
+}
+ 
+/* Staff */
+.staff-section {
+  padding: 48px var(--pad-x);
+}
+ 
+.staff-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 32px;
+}
+ 
+.staff-card {
+  flex: 1 1 200px;
+  min-height: 200px;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 4px;
+  color: var(--white);
+}
+ 
+.staff-card__name {
+  font-weight: 900;
+  font-size: .85rem;
+  letter-spacing: .03em;
+}
+ 
+.staff-card__role {
+  font-size: .75rem;
+  font-weight: 600;
+  line-height: 1.4;
+  opacity: .9;
+}
+ 
+.staff-card__contact,
+.staff-card__social {
+  font-size: .72rem;
+  opacity: .8;
+}
+ 
+.staff-card--green    { background: var(--green); }
+.staff-card--pink     { background: var(--pink); }
+.staff-card--orange   { background: var(--orange); }
+.staff-card--yellow   { background: var(--yellow); }
+.staff-card--darkblue { background: var(--darkblue); }
+ 
+@media (min-width: 900px) {
+  .staff-section {
+    padding: 64px max(40px, calc((100% - var(--inner)) / 2));
+  }
+  .staff-card {
+    flex: 1 1 240px;
+    min-height: 240px;
   }
 }
