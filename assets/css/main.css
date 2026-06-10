@@ -301,7 +301,7 @@ strong {
 }
 
 .ticker-track {
-  width: max-content; 
+  width: max-content;
   display: inline-flex;
   gap: 20px;
   animation: ticker 48s linear infinite;
@@ -805,7 +805,7 @@ strong {
 .pcard--yellow {
   background: var(--yellow);
   color: var(--black);
-    border-radius:  90px 0 0 90px ;
+  border-radius: 90px 0 0 90px;
 
 }
 
@@ -880,7 +880,7 @@ strong {
   display: flex;
   flex-direction: column;
   gap: 32px;
-    justify-content: center;
+  justify-content: center;
 }
 
 .footer__brand {
@@ -893,7 +893,7 @@ strong {
 .footer address {
   font-size: .9rem;
   line-height: 1.9;
-  
+
 }
 
 .footer a {
@@ -937,6 +937,7 @@ strong {
     flex: 1;
   }
 }
+
 /* ══════════════════════════════════════════════════
    WHATSAPP FAB
    ══════════════════════════════════════════════════ */
@@ -955,7 +956,7 @@ strong {
   color: var(--white);
   box-shadow: 0 6px 24px rgba(37, 211, 102, .45);
   transition: transform .2s, box-shadow .2s;
-    line-height: 1;
+  line-height: 1;
   display: flex;
 }
 
@@ -964,7 +965,7 @@ strong {
   box-shadow: 0 10px 32px rgba(37, 211, 102, .55);
 }
 
-.wa-fab > i {
+.wa-fab>i {
   font-size: 28px;
 }
 
@@ -976,7 +977,7 @@ strong {
     height: 60px;
   }
 
-  .wa-fab > i {
+  .wa-fab>i {
     font-size: 30px;
   }
 }
@@ -1343,7 +1344,7 @@ strong {
 /* ══════════════════════════════════════════════════
    CHI SIAMO
    ══════════════════════════════════════════════════ */
- 
+
 /* Hero cyan */
 .cs-hero {
   background: var(--cyan);
@@ -1353,7 +1354,7 @@ strong {
   align-items: center;
   min-height: 280px;
 }
- 
+
 .cs-hero__card {
   position: static;
   transform: none;
@@ -1361,18 +1362,18 @@ strong {
   width: 100%;
   text-align: center;
 }
- 
+
 /* Valori */
 .values {
   padding: 48px var(--pad-x);
 }
- 
+
 .values__grid {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
- 
+
 .val-card {
   border-radius: 12px;
   border: 4px solid transparent;
@@ -1384,120 +1385,170 @@ strong {
   gap: 12px;
   background: var(--white);
 }
- 
-.val-card__icon { font-size: 2rem; }
- 
+
+.val-card__icon {
+  font-size: 2rem;
+}
+
 .val-card p {
   font-size: .92rem;
   font-weight: 700;
 }
- 
-.val-card--pink   { 
+
+.val-card--pink {
   border: 20px solid var(--pink);
 }
-.val-card--yellow { 
+
+.val-card--yellow {
   border: 20px solid var(--yellow);
 }
-.val-card--cyan   { 
+
+.val-card--cyan {
   border: 20px solid var(--cyan);
 }
- 
+
 @media (min-width: 600px) {
-  .values__grid { flex-direction: row; }
-  .val-card { flex: 1; }
+  .values__grid {
+    flex-direction: row;
+  }
+
+  .val-card {
+    flex: 1;
+  }
 }
- 
+
 @media (min-width: 900px) {
   .values {
     padding: 64px max(40px, calc((100% - var(--inner)) / 2));
   }
-  .val-card { padding: 36px 24px; }
-  .val-card p { font-size: 1rem; }
+
+  .val-card {
+    padding: 36px 24px;
+  }
+
+  .val-card p {
+    font-size: 1rem;
+  }
 }
- 
+
 /* Team pills */
 .team-pills {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
- 
+
 .team-pill {
   display: block;
   background: var(--cyan);
+  border-radius: 5px 0 0 5px;
   color: var(--white);
   font-family: var(--font);
-  font-weight: 800;
-  font-size: .9rem;
+  font-weight: 300;
+  font-size: 1.4rem;
   padding: 10px 20px;
   letter-spacing: .05em;
 }
- 
+
 .team-list {
-  margin-top: 10px;
+  font-weight: 800;
+  margin-left: 53px;
+  margin-top: -12px;
   padding-left: 18px;
   display: flex;
   flex-direction: column;
   gap: 6px;
-  font-size: .88rem;
+  font-size: .99rem;
   line-height: 1.65;
 }
- 
+
+.team-pill:nth-child(1) {
+  width: 360px;
+  align-self: flex-end;
+}
+
+.team-pill:nth-child(2) {
+  width: 440px;
+  align-self: flex-end;
+}
+
+.team-pill:nth-child(3) {
+  width: 400px;
+  align-self: flex-end;
+}
+
 /* Staff */
 .staff-section {
   padding: 48px var(--pad-x);
 }
- 
+
 .staff-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 20px;
   margin-top: 32px;
 }
- 
+
 .staff-card {
   flex: 1 1 200px;
   min-height: 200px;
-  border-radius: 12px;
+  border-radius: 7px;
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  gap: 4px;
+  gap: 9px;
   color: var(--white);
+
 }
- 
+
 .staff-card__name {
-  font-weight: 900;
-  font-size: .85rem;
+  font-weight: 400;
+  font-size: 1rem;
   letter-spacing: .03em;
 }
- 
+
 .staff-card__role {
   font-size: .75rem;
   font-weight: 600;
   line-height: 1.4;
   opacity: .9;
 }
- 
+
 .staff-card__contact,
 .staff-card__social {
   font-size: .72rem;
   opacity: .8;
 }
- 
-.staff-card--green    { background: var(--green); }
-.staff-card--pink     { background: var(--pink); }
-.staff-card--orange   { background: var(--orange); }
-.staff-card--yellow   { background: var(--yellow); }
-.staff-card--darkblue { background: var(--darkblue); }
- 
+
+.staff-card--green {
+  background: var(--green);
+}
+
+.staff-card--pink {
+  background: var(--pink);
+}
+
+.staff-card--orange {
+  background: var(--orange);
+}
+
+.staff-card--yellow {
+  background: var(--yellow);
+}
+
+.staff-card--darkblue {
+  background: var(--darkblue);
+}
+
 @media (min-width: 900px) {
   .staff-section {
     padding: 64px max(40px, calc((100% - var(--inner)) / 2));
   }
+.staff-grid {
+  justify-content: center;
+}
   .staff-card {
-    flex: 1 1 240px;
-    min-height: 240px;
+ flex: 0 1 calc(33.33% - 16px);min-height: 340px;
   }
 }
