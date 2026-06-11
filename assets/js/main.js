@@ -84,3 +84,51 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+
+
+// ── HERO CAROUSEL ─────────────────────────────────
+const heroImages = [
+  'assets/img/hero/hero_00.jpg',
+  'assets/img/hero/hero__1.jpg',
+  'assets/img/hero/hero__02.jpg',
+  'assets/img/hero/hero__2.jpg',
+  'assets/img/hero/hero__3.jpg',
+  'assets/img/hero/hero__4.jpg',
+  'assets/img/hero/hero__5.jpg',
+  'assets/img/hero/hero__6.jpg',
+  'assets/img/hero/hero__7.jpg',
+  'assets/img/hero/hero__0008_4.jpg',
+  'assets/img/hero/hero__8.jpg',
+  'assets/img/hero/hero__9.jpg',
+  'assets/img/hero/hero__0010_3.jpg',
+  'assets/img/hero/hero__11.jpg',
+  'assets/img/hero/hero__0013_8.jpg',
+  'assets/img/hero/hero__13.jpg',
+  'assets/img/hero/hero__0015_7.jpg',
+];
+
+function buildHeroCarousel(hero) {
+  const firstSrc = hero.querySelector('.hero__img').src;
+  hero.querySelector('.hero__img').remove();
+
+  const track = document.createElement('div');
+  track.className = 'hero__track';
+
+  heroImages.forEach((src, i) => {
+    const img = document.createElement('img');
+    img.src = i === 0 ? firstSrc : src;
+    img.alt = '';
+    img.className = 'hero__img';
+    track.appendChild(img);
+  });
+
+  hero.insertBefore(track, hero.firstChild);
+
+  let current = 0;
+  setInterval(() => {
+    current = (current + 1) % heroImages.length;
+    track.style.transform = `translateX(-${current * 100}%)`;
+  }, 4000);
+}
+
+document.querySelectorAll('.hero').forEach(buildHeroCarousel);

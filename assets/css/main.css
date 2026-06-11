@@ -157,7 +157,7 @@ strong {
 
 @media (min-width: 900px) {
   :root {
-    --nav-h: 80px;
+    --nav-h: 110px;
   }
 
   .navbar {
@@ -165,7 +165,7 @@ strong {
   }
 
   .navbar__logo img {
-    height: 56px;
+    height: 106px;
   }
 
   .navbar__burger {
@@ -184,7 +184,7 @@ strong {
   }
 
   .nav-link {
-    font-size: .88rem;
+    font-size: 1.2rem;
     position: relative;
   }
 
@@ -356,13 +356,18 @@ strong {
   position: relative;
   overflow: hidden;
 }
+.hero__track {
+  display: flex;
+  width: 100%;
+  transition: transform 0.6s ease;
+}
 
 .hero__img {
-  width: 100%;
+  min-width: 100%;
   height: 280px;
   object-fit: cover;
   object-position: center 30%;
-  display: block;
+  flex-shrink: 0;
 }
 
 .hero__card {
@@ -577,6 +582,7 @@ strong {
   .testimonials__heading {
     margin-bottom: 44px;
     padding: 0 max(24px, calc((100% - var(--inner)) / 2));
+    justify-content: center;
   }
 
   .testimonials__heading h2 {
@@ -1826,4 +1832,50 @@ strong {
 
 .srv-btn-cyan {
   margin-left: 30px;
+}
+/* PARTNERS */
+.strutture {
+  padding: 48px var(--pad-x);
+}
+
+.strutture__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.struttura-card img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  aspect-ratio: 4/3;
+}
+
+.struttura-card__name {
+  font-weight: 800;
+  font-size: .9rem;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.cform__field--yellow {
+  border-bottom-color: var(--yellow);
+}
+
+.cform__field--yellow:focus-within {
+  border-bottom-color: var(--pink);
+}
+
+.candidatura-form--egitto input[type="date"] {
+  font-weight: 400;
+}
+
+@media (min-width: 900px) {
+  .strutture {
+    padding: 64px max(40px, calc((100% - var(--inner)) / 2));
+  }
+  .strutture__grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
 }
