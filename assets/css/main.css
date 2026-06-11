@@ -36,7 +36,7 @@
 
 html {
   scroll-behavior: smooth;
-   scrollbar-width: none;
+  scrollbar-width: none;
 }
 
 body {
@@ -45,12 +45,14 @@ body {
   background: var(--white);
   line-height: 1.6;
   overflow-x: hidden;
-    scrollbar-width: none; /* Firefox */
+  scrollbar-width: none;
+  /* Firefox */
 
 }
 
 body::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
+  display: none;
+  /* Chrome, Safari */
 }
 
 img {
@@ -356,6 +358,7 @@ strong {
   position: relative;
   overflow: hidden;
 }
+
 .hero__track {
   display: flex;
   width: 100%;
@@ -603,15 +606,15 @@ strong {
   }
 
   .tcard__header strong {
-    font-size: .95rem;
+    font-size: 1.3rem;
   }
 
   .tcard__header span {
-    font-size: .78rem;
+    font-size: .88rem;
   }
 
   .tcard p {
-    font-size: .88rem;
+    font-size: 1rem;
   }
 }
 
@@ -642,6 +645,11 @@ strong {
   flex-wrap: wrap;
 }
 
+.roles__tags img {
+  width: 100%;
+  max-width: 500px;
+}
+
 @media (min-width: 900px) {
   .roles {
     flex-direction: row;
@@ -654,9 +662,7 @@ strong {
     flex: 1;
   }
 
-  .roles__tags {
-    flex: 1.2;
-  }
+
 
   .roles__left h2 {
     font-size: 2rem;
@@ -832,18 +838,14 @@ strong {
   border-radius: 50%;
 }
 
-@media (min-width: 600px) {
+
+
+@media (min-width: 900px) {
   .partners-preview__grid {
     flex-direction: row;
     gap: 106px;
   }
 
-  .pcard {
-    flex: 1;
-  }
-}
-
-@media (min-width: 900px) {
   .partners-preview {
     padding: 70px 0;
   }
@@ -860,11 +862,23 @@ strong {
   .pcard {
     padding: 32px;
     gap: 24px;
+    height: 160px;
+    flex: 1;
+
   }
 
   .pcard__logo {
-    max-height: 90px;
+    max-height: 110px;
   }
+.pcard__name{
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+.pcard__sub{
+  font-size: 1rem;
+}
+
+
 }
 
 /* ══════════════════════════════════════════════════
@@ -888,8 +902,9 @@ strong {
 
 .footer p,
 .footer address {
-  font-size: .9rem;
-  line-height: 1.9;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  font-weight: 400;
 }
 
 .footer a {
@@ -955,11 +970,12 @@ strong {
   box-shadow: 0 10px 32px rgba(37, 211, 102, .55);
 }
 
-.wa-fab > i {
+.wa-fab>i {
   font-size: 28px;
   line-height: 1;
 }
-.wa-fab > i::before {
+
+.wa-fab>i::before {
   display: block;
   line-height: 1;
 }
@@ -1833,6 +1849,7 @@ strong {
 .srv-btn-cyan {
   margin-left: 30px;
 }
+
 /* PARTNERS */
 .strutture {
   padding: 48px var(--pad-x);
@@ -1874,6 +1891,7 @@ strong {
   .strutture {
     padding: 64px max(40px, calc((100% - var(--inner)) / 2));
   }
+
   .strutture__grid {
     grid-template-columns: repeat(4, 1fr);
     gap: 24px;
